@@ -57,7 +57,7 @@ int main(void) {
         balance -= amount;
 
         printf("\nSuccessfully withdrew %.2f\n", amount);
-        printf("New balance: %.2f€\n", balance);
+        printf("New balance: €%.2f\n", balance);
       }
 
       pause_screen();
@@ -99,7 +99,7 @@ void clear_input(void) {
 }
 
 void check_balance(double balance) {
-  printf("Your current balance is %.2f€\n", balance);
+  printf("Your current balance is €%.2f\n", balance);
 }
 
 double prompt_amount(const char* action) {
